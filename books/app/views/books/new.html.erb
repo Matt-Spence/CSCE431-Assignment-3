@@ -5,10 +5,21 @@
   </p>
  
   <p>
-    <%= form.label :text %><br>
-    <%= form.text_area :text %>
+    <%= form.label :author %><br>
+    <%= form.text_field :author %>
   </p>
- 
+   <p>
+    <%= form.label :genre %><br>
+    <%= form.select :genre, options_for_select([["A", 1], ["B", 2]])%>
+  </p>
+  <p>
+    <%= form.label :price %><br>
+    <%= form.text_field :price %>
+  </p>
+  <p>
+    <%= form.label :published_date %><br>
+    <%= form.date_field :published_date %>
+  </p>
   <p>
     <%= form.submit %>
   </p>
